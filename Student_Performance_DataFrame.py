@@ -17,12 +17,12 @@ average = datas["Marks"].mean()
 print(average)
 
 print("\nStudents who scored more than 75:")
-print(df[df["Marks"] > 75])
+print(datas[datas["Marks"] > 75])
 
 
 print("\nStudents whose attendance is below 80%:")
-print(df[df["Attendance"] < 80])
+print(datas[datas["Attendance"] < 80])
 
 
 print("\nStudents sorted by Marks:")
-print(df.sort_values("Marks"))
+print(datas.sort_values("Marks"))
