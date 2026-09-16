@@ -17,11 +17,13 @@ average = datas["Marks"].mean()
 print(average)
 
 print("\nStudents who scored more than 75:")
-print(datas[datas["Marks"] > 75])
+above = datas["Attendance"] > 75
+print(datas[above])
 
 
 print("\nStudents whose attendance is below 80%:")
-print(datas[datas["Attendance"] < 80])
+below = datas["Attendance"] < 80
+print(datas[below])
 
 
 print("\nStudents sorted by Marks:")
